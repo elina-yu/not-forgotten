@@ -14,7 +14,7 @@ def incidentsSince(date, df):
 	return [len(df1), df1['Deaths'].sum()]
 
 #Input file here
-fileName = 'schoolShootingData.csv'
+fileName = 'wikipedia_school_shooting.csv'
 
 #These are the keys we're going to use to access the twitter bot
 CONSUMER_KEY = 'G9fqSBjRt5QKKdLSLG9aY9W7m'
