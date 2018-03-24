@@ -1,0 +1,133 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+body, html {
+  overflow: scroll;
+  background-color: white;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 32px;
+  color: darkred;
+}
+
+header { 
+  /*border-bottom: 1px solid #000;*/ 
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+}
+
+header > h1 { 
+  display: inline-block;
+  width: 37%;
+  align-content: flex-start;
+  right: 0%;
+}
+
+header span { 
+  margin-left: 14px; 
+  display: inline-block;
+  width: 60%;
+  align-content: flex-end;
+}
+
+nav {
+  font-family:'Palatino', 'Arial', 'Sans-Serif';
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 1%;
+  width: 100%;
+  color: white;
+}
+
+.center-cropped {
+  height: 680px;
+  min-width: 40px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: none; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  position: relative;
+}
+
+second-page {
+  background-color: grey;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  z-index: 5;
+}
+
+#banner {
+  position: relative;
+  min-height: 100%;
+  width: 58%;
+  margin: 0px auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+align-logos {
+  width: 100%;
+  position: center center;
+  display: flex;
+  justify-content: space-between;  
+  justify-content: space-around;
+  text-align:justify;
+  position: relative;
+}
+
+#contact {
+  display: block;
+  width: 80px;
+  height: 80px;
+  backface-visibility: hidden;
+  opacity: 1;
+  transition: .5s ease;
+}
+
+#contact:hover {
+  opacity: 0.3;
+}
+
+
+#contact-box {
+  width: 100%;
+  height: 350px;
+  background: #ffffff;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+}
+
+line {
+  border-bottom: 1px solid #000;
+}
+
+italics {
+  font-style: italic;
+}
