@@ -98,9 +98,8 @@ def next_day_data(year, month, day):
         year, month, day = next_day(year, month, day)
         row = []
         data = []
-        data.append(year)
-        data.append(month)
-        data.append(day)
+        date = str(month)+"/"+str(day)+"/"+str(year)
+        data.append(date)
         base = u'https://twitter.com/search?l=&q='
         query = u'"school%20shooting"%20'
         url = base+query+since_date(year, month, day)+until_date(year, month,day)
@@ -132,7 +131,7 @@ def next_day_data(year, month, day):
         row.append(data)
         
         ## ADD TO CSV
-        csvfile = open("twitter_data.csv", "a")
+        csvfile = open("twitter_data_test.csv", "a")
         writer = csv.writer(csvfile)
         writer.writerows(row)
         csvfile.close()    
@@ -140,18 +139,14 @@ def next_day_data(year, month, day):
 # main method
 def main():
     # start date is twitter start date march 21, 2006
-    #year = 2006
-    #month = 3
-    #day = 21
-    year = 2018
+    year = 2006
     month = 3
-    day = 22
+    day = 21
     row = []
     data = []
-    data.append(year)
-    data.append(month)
-    data.append(day)
-    row.append(["Year", "Month", "Day", "Count"])
+    date = str(month)+"/"+str(day)+"/"+str(year)
+    data.append(date)
+    row.append(["Date", "Count"])
     
     base = u'https://twitter.com/search?l=&q='
     query = u'"school%20shooting"%20'
@@ -165,13 +160,13 @@ def main():
     
     # open website
     driver.get(url)
-    time.sleep(1)
+    time.sleep(0.5)
 
     body = driver.find_element_by_tag_name('body')
 
     for i in range(100):
         body.send_keys(Keys.PAGE_DOWN)
-        time.sleep(0.5)
+        time.sleep(1)
         
     num_tweets = 0
 
@@ -184,7 +179,7 @@ def main():
     row.append(data)
     
     ## ADD TO CSV
-    csvfile = open("twitter_data.csv", "w")
+    csvfile = open("twitter_data_test.csv", "w")
     
     writer = csv.writer(csvfile)
     writer.writerows(row)
@@ -194,10 +189,3 @@ def main():
     
     
 main()
-
-    
-    
-    
-    
-    
-    
