@@ -1,9 +1,5 @@
 # Project @NotForgottenBot
 ## What is Project NotForgotten?
-There have already been 12 incidents of school shootings in the US since 2018 began but how many people even know about this? Do people even know which schools these incidents occurred in?
-Project NotForgotten is project devoted to spreading awareness to the growing number of incidents and also helping people to **not forget**.
-We made a Twitter Bot that replies when prompted with key words "since", "last", a date or a given time span. The bot replies with the number of incidents, casualties and injuries within the time span prompted.
+We only have to look at the recent student organized March For Our Lives to realize that gun control and school shootings are topics that each of us must somehow confront and come to terms with. While the internet is drowning in partisan opinion, we aimed to create something that would raise awareness about this issue while sticking to the facts and facts alone. We hope that a frank look at the statistics can begin to generate a more open and productive discourse across the many lines of division that seem to separate Americans now more than ever. Regardless of party affiliation, we can all agree that no student should ever have to risk their lives for their education.
 
-
-
-
+Project NotForgotten is devoted to We made a Twitter Bot that replies when prompted with key words "since", "last", a date or a given time span. The bot replies with the number of incidents, casualties and injuries within the time span prompted. This way we can constantly keep in mind the gravity of these situations, and keep these tragedies from being lost in such a fast paced world.
